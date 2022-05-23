@@ -47,7 +47,7 @@ class Aplicacion:
         root.configure(width = wWeight, height = wHeight, bg="black")
 
         # fondo
-        self.imagenFondo = tkinter.PhotoImage(file="b.png")
+        self.imagenFondo = tkinter.PhotoImage(file="bg_v2.png")
         self.label0 = tkinter.Label(root, image=self.imagenFondo)
         #self.label0.place(relwidth=1,relheight=1)
         self.canvas1 = tkinter.Canvas(root, width=wWeight, height=wHeight)
@@ -55,13 +55,13 @@ class Aplicacion:
         self.canvas1.create_image(0, 0, image=self.imagenFondo, anchor="nw")
 
         # logo
+        '''
         self.logo = tkinter.PhotoImage(file="petalks.png")
         self.label00 = tkinter.Label(root, image=self.logo, width=234, height=83)
-        self.label00.configure(bg="black")
+        self.label00.configure(bg="white")
         self.label00.pack(fill="both", expand=True)
-        self.label00.place(x=10,y=10)
-
-
+        self.label00.place(x=10, y=10)
+        '''
         # lista desplegable para seleccionar el audio input1
         self.combo = ttk.Combobox(state="readonly", values=["Dog", "Cat", "Donkey"])
         self.combo.place(x=wWeight*0.1, y=wHeight*0.4)
@@ -128,4 +128,5 @@ class Aplicacion:
 
 root = tkinter.Tk()
 aplicacion = Aplicacion(root)
+
 root.mainloop()
