@@ -39,12 +39,14 @@ def generaMatriz(capaMatrizGen):
 class Aplicacion:
     def __init__(self, root):
         root.title("PetTalk")
+        
 
         # la ventana no es responsive aun
         # x en funcion del wWeight
         wHeight = 675
         wWeight = 950
         root.configure(width = wWeight, height = wHeight, bg="black")
+        root.resizable(false,false)
 
         # fondo
         self.imagenFondo = tkinter.PhotoImage(file="bg_v2.png")
