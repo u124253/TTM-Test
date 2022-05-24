@@ -43,13 +43,13 @@ class Aplicacion:
 
         # la ventana no es responsive aun
         # x en funcion del wWeight
-        wHeight = 675
-        wWeight = 950
+        wHeight = 720  #adecuado al tamaño de la foto tanto HxW 
+        wWeight = 1045
         root.configure(width = wWeight, height = wHeight, bg="black")
         root.resizable(False,False) #para que el usuario no pueda redimensionar la ventana ya predifinida
 
         # fondo
-        self.imagenFondo = tkinter.PhotoImage(file="bg_v2.png")
+        self.imagenFondo = tkinter.PhotoImage(file="bg_v3.png")
         self.label0 = tkinter.Label(root, image=self.imagenFondo)
         #self.label0.place(relwidth=1,relheight=1)
         self.canvas1 = tkinter.Canvas(root, width=wWeight, height=wHeight)
