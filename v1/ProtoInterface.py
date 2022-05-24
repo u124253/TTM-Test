@@ -46,7 +46,7 @@ class Aplicacion:
         wHeight = 675
         wWeight = 950
         root.configure(width = wWeight, height = wHeight, bg="black")
-        root.resizable(false,false)
+        root.resizable(false,false) #para que el usuario no pueda redimensionar la ventana ya predifinida
 
         # fondo
         self.imagenFondo = tkinter.PhotoImage(file="bg_v2.png")
